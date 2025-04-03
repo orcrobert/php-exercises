@@ -1,5 +1,4 @@
 # PHP exercises
-Some exercises to learn the basics of PHP, for my Backend Development Internship.
 
 1. Page to take an array as input and sort that array. Choose the sorting algorithm from a dropdown select. You should have 4 different algorithms.
 2. Page to take an integer as input and check if it is prime.
