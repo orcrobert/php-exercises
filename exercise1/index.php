@@ -27,9 +27,9 @@
 <div id="result">
     <?php
     if (isset($_GET['sorted_array'])) {
-        $sorted_array = explode(', ', $_GET['sorted_array']);
+        $sorted_array = $_GET['sorted_array'];
 
-        echo "<p><b>Sorted Array:</b> " . implode(", ", $sorted_array) . "</p>";
+        echo "<p><b>Sorted Array:</b> " . $sorted_array . "</p>";
     }
     ?>
 </div>

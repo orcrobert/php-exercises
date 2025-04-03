@@ -1,6 +1,6 @@
 <?php
 
-$sorted_array = array();
+$sortedArray = array();
 
 function bubbleSort($array) {
     $n = count($array);
@@ -67,22 +67,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     switch ($algorithm) {
         case "bubble":
-            $sorted_array = bubbleSort($array);
+            $sortedArray = bubbleSort($array);
             break;
         case "select":
-            $sorted_array = selectionSort($array);
+            $sortedArray = selectionSort($array);
             break;
         case "insert":
-            $sorted_array = insertionSort($array);
+            $sortedArray = insertionSort($array);
             break;
         case "php-sort":
-            $sorted_array = phpSort($array);
+            $sortedArray = phpSort($array);
             break;
         default:
             break;
     }
 
-    $sortedArrayString = implode(", ", $sorted_array);
+    $sortedArrayString = implode(", ", $sortedArray);
     header("Location: index.php?sorted_array=" . $sortedArrayString);
 }
 else {
