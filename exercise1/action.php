@@ -84,7 +84,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sortedArrayString = implode(", ", $sorted_array);
     header("Location: index.php?sorted_array=" . $sortedArrayString);
-} else {
+}
+else {
     header("Location: index.php");
 }
 exit();
